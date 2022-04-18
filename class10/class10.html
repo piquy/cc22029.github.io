@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Clase10 - HTML </title>
+
+    <style>
+        /* pseudo-clases | visited */
+        a:visited{
+            color:rgb(244, 129, 36);
+            text-decoration: none;
+            font-size: 2.5em;
+        }
+        /* Pasar el mouse por encima*/
+        a:hover{
+            color: blueviolet;
+            font-size: 24px;
+            text-decoration: line-through;
+        }
+        /* active */
+        a:active{
+            color: rgb(245, 41, 153);
+            text-transform: uppercase;
+        }
+        /* nth-child(n)*/
+        div p:nth-child(1){
+            color: rgb(247, 46, 170);
+            font-size: 2em;
+        }
+        div p:nth-child(odd){
+            color: chartreuse;
+        }
+        table{
+            border: 3px solid red;
+        }
+
+      table tr:nth-child(odd){
+        background-color: yellow;
+      }
+      table tr:nth-child(even){
+        background-color: green;
+      }
+        .titulo:nth-child(1){
+        background-color: white;
+        }
+    </style>
+</head>
+<body>
+        <main>
+            <h1> Título de página </h1>
+            <section>
+                <p>   Texto 1  </p>
+                <a href="https://duckduckgo.com/"> Ir a DDG </a>
+                <a href="https://www.reddit.com"> Ir a REDDIT </a>
+                <a href="https://www.fsf.org"> Ir a FSF </a>
+                <a href="pseudoElemetos.html"> Ir a Pseudo-Elementos </a>
+                <a href="selectorPorAtr.html"> Selector por Atributos </a>
+            </section>
+
+            <section>
+                <div>
+                    <p> texto 1 </p>
+                    <p> texto 2 </p>
+                    <p> texto 3 </p>
+                    <p> texto 4 </p>
+                </div>
+                
+                <table>
+                    <tr class="titulo">
+                        <!--TITULO-->
+                            <th> ID </th>
+                            <th> Nombre </th>
+                            <th> Precio(pesos) </th>
+                    </tr>
+
+                    <!--REGISTROS-->
+                    <tr>
+                        <td> 242007 </td>
+                        <td> Paso de los Toros </td>
+                        <td> 160 </td>
+                    </tr>
+                    
+                    <tr>
+                        <td> 108807 </td>
+                        <td> Cruz Malta </td>
+                        <td> 250 </td>
+                    </tr>
+
+                    <tr>
+                        <td> 10160 </td>
+                        <td> Marlboro </td>
+                        <td> 230 </td>
+                    </tr>
+
+                    <tr>
+                        <td>  07208 </td>
+                        <td>  M&M </td>
+                        <td>  140 </td>
+                    </tr>
+
+                    <tr>
+                        <td>  37160  </td>
+                        <td>  Lavandina  </td>
+                        <td>  310 </td>
+                    </tr>
+                    
+                </table>
+            </section>
+        </main>
+</body>
+</html>
