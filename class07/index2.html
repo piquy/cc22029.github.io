@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+
+        <title> Clase7 - HTML </title>
+       
+        <!--
+        <style>
+            /* esto es un comentario de una sola linea, CSS */
+            /* y estoy usando css interno*/
+            body{
+                /*background-color: aqua;*/
+            }
+        </style>
+        -->
+        <br>
+        <!-- incluyo un archivo externo al index.html, de estilos css -->
+        <link rel="stylesheet" href="./style2.css">
+
+    </head>
+
+    <body>
+        <!-- Este es un comentario, pero HTML -->
+        <!-- un estilo inline, predomina sobre el interno -->
+        <header class="header">
+
+            <!-- <img src="simpson3.jpeg" alt="logo"> -->
+            <img src="BAlogo.png" alt="logo">
+    <!-- Que la img del logo aparezca del mismo color del background
+         se debe al formato de la imagen (png en este caso) -->        
+
+            <!-- El «id» aplica para uno solo -->
+            <nav class="nav">
+                <a class="links" href="#"> Inicio </a>
+                <a class="links" href="#"> Actividades </a>
+                <a href="#"> Turnos </a>
+                <a class="links" href="#"> Trámites </a>
+                <a href="#"> Contacto </a>
+            </nav>
+        </header>
+
+        <main   class="container">
+            <section class="classsection">
+                <h1> 
+                    Título principal de la página
+                </h1>
+            </section>
+            
+            <section class="classsection">
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <ul class="selectores">
+                    <li>
+                        <a href="#">
+                            <b> Link 1 </b>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="linkActive" href="#">
+                            <b> Link 2 </b>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </section>
+
+        </main>
+
+    </bodyyle=>
+</html>
