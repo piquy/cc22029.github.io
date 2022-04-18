@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> pseudoEleClase10 - HTML </title>
+            <br>
+    <style>
+      /*@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');*/
+
+        h1::before{
+            content: '#';
+        }
+        h1::after{
+            content: '*';
+        }
+        h1{
+            color:aquamarine;
+            font-family:Arial, Helvetica, sans-serif ;
+            text-transform: lowercase;
+        }
+        /*font*/
+        h2::first-letter{
+            border: 3px solid orange;
+        }
+        
+        /* esto es la definicion de la 'class' */
+        section p.clasep{
+            font-style: italic;
+        }
+
+        /*  */
+        section p.clasep::before{
+            content: '--';
+        }
+
+     /* esto es un pseudoelemento 'after' de ésta 'clasep' de éste elemento 'p' de ésta «section»*/
+        section p.clasep::after{
+            content: '**';
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>  Pseudoelementos  </h1>
+            <h2>  Subtitulo de prueba  </h2>
+            <p class="clasep">   Texto adsdsad </p>
+        </section>
+    </main>
+</body>
+</html>
