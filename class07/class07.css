@@ -1,0 +1,39 @@
+/*
+*{
+    blackground-color: blue;
+}
+*/
+
+body{
+    background-color: aqua;
+}
+
+/* aplicar "selector id" a «section», usando en este caso #<idsection> */
+/* "id" es para elemento único */
+#idsection{
+    background-color: blueviolet;
+}
+
+/* aplicar "selector id" a «nav», usando en este caso #<nav> */
+/* "id" es para elemento único */
+#nav{
+    background-color: beige;
+}
+
+/* aplicar "selector class" en «nav», usando en este caso .<nameClass> (.<links>) */
+.links{
+    color: rgb(36, 232, 36);
+}
+
+#secidp{
+    background-color: orange;
+}
+
+/*  selector etiqueta*/
+a{
+    text-decoration: none;
+}
+
+#linkActive{
+    color: rgb(238, 8, 196);
+}
