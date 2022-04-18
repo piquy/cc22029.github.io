@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Clase5 - HTML </title>
+</head>
+
+<body>
+    <h1> CREAR CUENTA </h1>
+
+    <fieldset>
+        <legend>
+            <h3> Informaci&oacute;n Personal </h3>    
+        </legend>
+        
+        <form>
+            <br>
+            <label> Nombre: *   </label>
+            <input type="text" name="nombre: " placeholder="Patricio">
+            
+            <label> Apellido: * </label>
+            <input type="text" name="apellido: " placeholder="Igles&iacute;as">
+            <!-- 'placeholder'es un contenido de referencia, ergo, es un ejemplo -->
+            <br>
+
+            <!-- Contacto -->
+            <label> Direcci&oacute;n de email: * </label>
+            <input type="email" placeholder="ejemplo@tutanota.com">
+            <br>
+            <!-- Datos personales -->
+            <label>N° de DNI: *</label>
+            <input type="text" name="" placeholder="xxxxxxxx">
+            <br>
+
+            <!-- Sólo números -->
+            <label> Edad </label>
+            <input type="number" min="18" max="99">
+            <br>
+
+            <label> Tiene hijxs: </label>
+            <label> SI </label>
+            <input type="checkbox" name="tiene hijxs" value="SI">
+            <label> NO </label>
+            <input type="checkbox" name="tiene hijxs" value="NO">
+            <br>
+
+            <label> Estado Civil: </label>
+            <label> Soltero/a </label>
+            <input type="radio" name="Estado Civil" value="SI">
+            <label> Casado/a </label>
+            <input type="radio" name="Estado Civil" value="NO" checked>
+            <br>
+
+            <label> Quiero suscribirme al bolet&iacute;n de novedades semanales </label>
+            <input type="checkbox" name="boletín oficial" value="" checked>
+            <br>
+
+            <label> Cantidad </label>
+            <select name="" id="">
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+            </select>
+
+
+            <br>
+            <input type="submit" value="ENVIAR ">
+        
+        </form>
+    
+    </fieldset>
+
+    <fieldset>
+        <legend> <h3> Form con Tabla </h3> </legend>
+        
+        <form action="../clase4/index.html" method="POST">
+            <table>
+            <!--  -->    
+                <tr>
+                    <td> 
+                        <label> <h4>Nombre:</h4> </label>    <br>
+                        <input type="text" name="nombre" maxlength="24">  
+                    </td>
+
+                    <td> 
+                        <label> <h4>Apellido:</h4> </label>  <br>
+                        <input type="text" name="apellido">
+                    </td>
+                </tr>
+
+            <!--  -->    
+                <tr>
+                    <td>
+                        <label> <h4>DNI:</h4> </label>     <br>
+                        <input type="number" name="dni" min="0" max="999999">
+                    </td>
+                </tr>
+
+            <!--  -->     
+                <tr>
+                    <td>
+                        <label> <h4>&oacute;n de email:</h4> </label>     <br>
+                        <input type="email" name="email" placeholder="ejemplo@tutanota.com">
+                    </td>
+                </tr>
+            
+
+            <!--  -->
+                <tr>
+                    <td>
+                        <input type="submit" value="Guadar">
+                    </td>
+                </tr>
+
+            </table>
+        </form>    
+    </fieldset>
+
+</body>
+</html>
