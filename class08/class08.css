@@ -1,0 +1,69 @@
+/* Éste es la 3ra opción de personalización (la, más usada, importar el link directa' a 'css') de font-google a 'style.css' para afectar éste 'index.html' */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+h1{
+    cursor: pointer;
+}
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* los cambios siempre se aplican sobre el ultimo, »li« en éste caso */
+nav ul li{
+    list-style: circle;
+}
+
+/* si quisiera aplicar algo a «ul» (que es el anterior), debo omitir el «li»*/
+nav ul{
+    color: rgb(236, 6, 6);
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-style: italic;
+}
+
+/*      más propiedades de texto    */
+.text-right{
+    /*letter-spacing: 3px;*/
+    /*text-align: right; /* left|right*/
+    /*text-align: justify;*/
+    /*word-spacing: 15px;*/
+    /*text-transform: uppercase;*/  /*lowercase|uppercase|capitalize*/
+    text-decoration: line-through;
+    text-decoration-color: orange;
+    text-decoration-style: double;
+}
+.text-right span{
+    word-spacing: 2px;
+}
+/* texto con sombra*/
+ h3{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 8px 8px tomato;
+ }
+ /* Bordes */
+ section table{
+     border-left: 2px solid black;
+     border-right: 3px solid grey;
+     border-top: 2px solid yellow;
+     border-bottom: 3px solid green;
+ }
+ section table td{
+     border-left: 5px solid rgb(236, 6, 6);
+     border-right: 5px solid rgb(236, 6, 6);
+     border-top: 5px solid rgb(236, 6, 6);
+     border-bottom: 5px solid rgb(236, 6, 6);
+ }
+ /* ejercicio: realizar para el th un color distinto (tarea hecha) */
+ section table th{
+    border-left: 5px solid rgb(32, 14, 203);
+    border-right: 5px solid rgb(32, 14, 203);
+    border-top: 5px solid rgb(32, 14, 203);
+    border-bottom: 5px solid rgb(32, 14, 203);
+ }
+
+ /* averiguar que es un favicon y como implementarlo (agregarlo) en éste html (tarea realizada */
