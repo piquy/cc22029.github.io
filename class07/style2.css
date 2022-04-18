@@ -1,0 +1,25 @@
+/*
+*{
+    blackground-color: blue;
+}
+*/
+
+body{
+    background-color: aqua;
+}
+
+.container{
+    background-color: chartreuse;
+}
+
+.classsection{
+    background-color: darkslategray;
+}
+
+#linkActive{
+    color: red;
+}
+
+.header{
+    background-color: antiquewhite;
+}
