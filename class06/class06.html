@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title> Clase6 - HTML </title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1> Clase6 </h1>
+            <fieldset>
+                <legend>
+                    Alta de Usuario 
+                </legend>
+
+                <form action="repaso.html" method="get">  <!-- el metodo post oculta los valores (info)-->
+                    <label> <strong>FILE</strong>  </label>
+                    <input type="file" name="dni-frente" required>
+                    
+                    <label><b>URL</b> </label>
+                    <input type="url" name="url" required placeholder="https://dominio.com">
+                    <label> <b>NAME</b> </label>
+                    <input type="text" name="nombre"required placeholder="Patricio">
+                    
+                    <input type="hidden" value="valorOculto" name="campoHidden">
+                    
+                    <input type="text" placeholder="Ingresar valores entre 0-9" required pattern="[0-9]">
+                    
+                    <br>
+                    <br>
+                    <label> Comentario y/o aclaracion (Por favor, sea conciso)</label>
+                    <br>
+                    <textarea name="info-extra" id="" cols="50" rows="5" required></textarea>
+                    <hr>
+
+                    <select multiple name="SelectMultiple" required>
+                            <optgroup label="Felinos">
+                                <option> León </option>
+                                <option> Tigre </option>
+                                <option> Puma </option>
+                            </optgroup>
+
+                            <optgroup label="Réptiles" required>
+                                <option> Caíman </option>
+                                <option> Cocodrilo </option>
+                                <option> Iguana </option>
+
+                            </optgroup>
+                    </select>
+                    <br>
+
+                    <label> <b>Choose a browser</b> </label>
+                    <input list="browser" required>
+                    <datalist id="browser" name="databrowser">
+                        <option> TOR </option>
+                        <option> ICECAT </option>
+                        <option> UNGOOGLED </option>
+                        <option> PALEMOON </option>
+                    </datalist>
+
+                    <br>
+                    <!--Esta es la manera semantica (correcta) de asociar un 'label' con un 'input':
+                    al 'label' se le agrega 'for' y su contenido debe ser igual al 'ID' del 'input' -->
+                    <label for="buscar"> <b>Tipo search</b> </label> 
+                    <input type="search" name="buscar" id="buscar">
+                    <br>
+                    <label for=""> <b>Tipo text</b> </label>
+                    <input type="text" name="buscartext">
+                    <br>
+
+                    <hr>
+                    <input type="submit" value="enviar">
+                </form>
+
+            </fieldset>
+        </section>
+    </main> 
+</body>
+</html>
