@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Clase9 - HTML </title>
+    <style>
+            *{
+                /*elimino los margenes(margin)*/
+                margin: 0px;
+            }
+            .divBox{
+            /* así separo, al margen superior, según el px agregado */
+                /*margin-top: 15px;*/
+
+            /* así separo, al margen izquierdo, según el px agregado */
+                /*margin-left: 25px;*/
+
+            /* si quiero repartir la misma cantidad de px, debo hacerlo así: */
+            /* tenemos un elemento, que en gral será un 'div' (no siempre), pero en gral */
+                margin: 15px;/*'margin' sirve para aplicar separacion entre elementos */
+                border: 2px solid red;/*sirve para aplicar un borde al elemento*/
+
+                /*sirve para aplicar una separacion del borde hacia el elemento que esta internamente*/
+                padding: 25px 10px; 
+
+                width: 45%;     /*'width' sirve para darle un tamaño*/
+                box-sizing: border-box;     /*nos olvidamos de hacer los calculos manualmente*/
+                
+                /* el atributo »inline-block« a un elemento en 'block' lo convierte en 'inline'*/            
+                display: inline-block;
+                
+                /* con este atributo se alinea el texto, SOLO para esta class (para éste ej) en el centro */        
+                text-align: center; 
+            }
+            /* ESPECIFICIDAD (orden de importancia*/
+            /* !important > inline > id > class*/
+            h3{
+                color: aqua;
+            }
+            #sec1 {
+                color: #7fff00 !important;
+            }
+            /* con este 'id' se centra el contenido del texto del «h3» (en éste caso)*/
+            #sec2{
+                text-align: center;
+            }
+            /* MEDIDAS:
+                > absolutas=> 1px = 0.26mm
+                                    mm
+                                    cm
+                                    pt: puntos 0.35 mm
+                                    im: pulgadas 2.54 cm
+                                    pc: pica 4.23mm
+                > relativas=> em: div 10px > 2em= 20px 
+                              rem: (root element, html)
+                    > flexibles=> vw: viewport width
+                                  vh: viewport height
+            */
+            .medidas{
+                font-size: 10px;
+            }
+            .medidas h3{
+                font-size: 3em;     /* 10px x 3= 30px */
+            }
+            .medidas p{
+                font-size: 4.5em;     /* 10px x 3= 30px */
+            }
+            .s_p{
+                width: 12cm;
+                height: 24cm;
+                background-color: #7fff00;
+            }
+            /* POSICIONAMIENTO */
+            .cuadrado{
+                width: 200px;
+                height: 240px;
+                background-color: darkred;
+
+                 /*mantiene un elemento fijo, sin importar cuanto se mueva la */
+                /*position:fixed;*/
+
+                /* mantiene el elemento a 'x' distancia del borde, pero no queda fijo*/
+                position: relative;
+                top: 100px;
+                left: 50px;
+            }
+            .circulo{
+                background: blue;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 50px;
+            }
+
+    </style>
+</head>
+<body>
+
+<!-- el main>section>div es como una caja dentro de una caja que está dentro de otra caja -->    
+    <main>
+
+        <section>
+            <div class="cuadrado">
+                <ul>
+                    <li>
+                        opcion1
+                    </li>
+                    <li>
+                        opcion2
+                    </li>
+                </ul>
+                <div class="circulo">
+            </div>
+        </section>
+
+
+        </div>
+
+        <section>
+            <div class="divBox">
+                    <h1> Texto de prueba </h1>
+            </div>
+            <div class="divBox">
+                <h2> Subtitulo </h2>
+        </div>
+
+        </section>
+
+            <!-- ESPECIFICIDAD -->
+        <!--Si una etiqueta es afectada por 3 estilos, que afectan el mismo atributo (color, en este caso) 
+            la predominante es el 'style' que está en (la misma) linea, sino hay estilo en linea el 
+            predominante es el 'id' y sino hay un 'id', el que predomina es el 'selector de etiquetas'.
+            Pero si yo quiero forzar un predominante utilizo el 'important'  
+-->
+        <section id="sec2">
+            <h3 id="sec1" style="color: fuchsia"> Subtitulo3 </h3>
+        </section>
+
+        <section class="medidas">
+            <h3> texto en h3 </h3>
+            <p> texto en section </p>
+        </section>
+
+        <section class="s_p">
+            <img src="mysterion.jpeg" class="s_p">
+        </section>
+
+    </main>
+</body>
+</html>
