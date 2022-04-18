@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+
+    <title> Clase8 - HTML </title>
+
+        <!--    (primera formade personalizar la fuente)
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        -->
+
+        <!-- Ahora vinculo los 3 links de la personalización de font-google a style.css para afectar este index.html -->
+        <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!--
+        <style>git 
+        (TODO esto se "borra" y debe trasladarse al style.css asociado a éste index)
+              h1{
+                /* acá se modifica el tamaño de la letra del título */
+                font-size: 50px;
+
+                /* así se modifica el tipo de fuente */
+                font-family: Arial, Helvetica, sans-serif;
+
+                /* así se define un estilo */
+                font-style: italic;
+
+                /* así se define el «peso» del texto */
+                font-weight: 500;
+                }
+
+                /* Acá se usa otra personalización */
+                h2{
+                font-family: 'Oswald', sans-serif;
+                }
+        </style>
+    -->
+             <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Ahora vinculo la personalización de font-google a 'style.css' con ésta importación de archivo externo para afectar éste 'index.html' -->
+             <link rel="stylesheet" href="style.css">
+             
+
+  <!-- Esta es la 2da forma de vincular la personalización de font-google a 'style.css' para afectar éste 'index.html' -->
+        <!--    <style>
+                @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+            </style>
+        -->
+
+        <style>
+            /*.link{
+                list-style: circle;
+            }*/
+/* Ésta 'a' al estar en la misma clase y al mismo style, le pertenece al 'link', es desdenciente de su 'link' predecesor se le puede aplicar otro estiilo */
+            /*.link a{
+                text-decoration: none;
+                font-size: 24px;
+                font-style: italic;
+            }*/
+/* hay una segunda manera de resolverlo >>> (en este caso sería) nav ul li a {text-decoration: none; font-size: 24px; font-style: italic;}*/
+
+
+            /*
+            #nosotros{
+                font-family: 'Oswald', sans-serif;
+            }
+            */
+
+
+        </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> Título de página </h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li> <!-- Se quitó el «class= "link"» de éste «li» porque se lo agrego al «style» del siguiente modo: nav ul li{} -->
+                    <a href="index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="#nosotros"> Nosotros </a>
+                </li>
+                <li>
+                    <a href="#contacto"> Contacto </a>
+                </li>
+                <li>
+                    <a href="#imagenes"> Imágenes </a>
+                </li>
+                <li>
+                    <a href="#articulos"> Artículos </a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <h2> Tablas </h2>
+            <table>
+                <tr>
+                    <th> Col1  </th>
+                    <th> Col2 </th>
+                </tr>
+                <tr>
+                    <td>  Fila1 col1 </td>
+                    <td>  Fila1 col2 </td>
+                </tr>
+                <tr>
+                    <td>  Fila2 col1 </td>
+                    <td>  Fila2 col2 </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <p class="text-right"> “El patriotismo es la principal parte de la ideología mediante la cual la burguesía envenena la conciencia 
+                de clase de los oprimidos y paraliza su voluntadrevolucionaria, porque patriotismo significa sujeción del proletariado a la 
+                nación, tras la cual está la burguesía.” </p>
+            <h3> Texto con sombra </h3>    
+        </section>
+
+        <section id="nosotros">
+            <h2> Sección Sobre Nosotros </h2>
+            <p>
+                Using Lorem ipsum to focus attention on graphic elements in a webpage design proposal.
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                 demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                Lorem ipsum may be used as a placeholder before the final copy is available.
+            </p>
+        </section>
+
+        <section id="contacto">
+            <h2> Contacto </h2>
+            <p>
+                Using Lorem ipsum to focus attention on graphic elements in a webpage design proposal.
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                 demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                Lorem ipsum may be used as a placeholder before the final copy is available.
+            </p>
+        </section>
+
+        <section id="imagenes">
+            <h2> Imágenes </h2>
+            <p>
+                Using Lorem ipsum to focus attention on graphic elements in a webpage design proposal.
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                 demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                Lorem ipsum may be used as a placeholder before the final copy is available.
+            </p>
+        </section>
+
+        <section id="articulos">
+            <h2> Artículos </h2>
+            <p>
+                Using Lorem ipsum to focus attention on graphic elements in a webpage design proposal.
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+                 demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                Lorem ipsum may be used as a placeholder before the final copy is available.
+            </p>
+        </section>
+
+    </main>
+
+
+</body>
+
+
+
+</html>
